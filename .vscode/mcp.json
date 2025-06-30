@@ -7,6 +7,12 @@
                 "@upstash/context7-mcp"
             ]
         },
+        "playwright": {
+            "command": "npx",
+            "args": [
+                "@playwright/mcp@latest"
+            ]
+        },
         "deepwiki": {
             "url": "https://mcp.deepwiki.com/sse"
         },
