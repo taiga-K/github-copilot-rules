@@ -1,0 +1,17 @@
+{
+    "servers": {
+        "context7": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@upstash/context7-mcp"
+            ]
+        },
+        "deepwiki": {
+            "url": "https://mcp.deepwiki.com/sse"
+        },
+        "github": {
+            "url": "https://api.githubcopilot.com/mcp/"
+        },
+    },
+}
