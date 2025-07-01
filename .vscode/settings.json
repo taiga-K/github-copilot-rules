@@ -1,0 +1,101 @@
+{
+    "github.copilot.chat.localeOverride": "ja",
+
+    // Next Edit Suggestionsの有効化
+    "github.copilot.nextEditSuggestions.enabled": true,
+
+    // コード生成のための指示
+    "github.copilot.chat.codeGeneration.instructions": [
+        {
+            "text": "セキュリティを最優先にし、認証情報やAPIキーをハードコーディングしない。入力値は必ず検証・サニタイズする"
+        },
+        {
+            "text": "変数、関数、クラスには意味のある名前を付ける。言語固有の命名規則に従う（camelCase、PascalCase、snake_case）"
+        },
+        {
+            "text": "関数は50行以内、引数は5個以内に抑える。単一責任原則を守り、1つの関数は1つの目的を持つ"
+        },
+        {
+            "text": "DRY原則に従い重複コードを避ける。コードの可読性を重視し、複雑なロジックにはコメントを追加する"
+        },
+        {
+            "text": "エラーハンドリングを適切に実装する。汎用的なcatch-allは避け、具体的な例外タイプを使用する"
+        },
+        {
+            "text": "パフォーマンスを考慮した設計を行う。適切なデータ構造を選択し、計算量を最小化する"
+        },
+        {
+            "text": "テストを意識したコード設計にする。公開インターフェースには適切なドキュメンテーション（JSDoc、docstring等）を追加する"
+        },
+        {
+            "text": "コード生成時はファイル名を含めて回答する。言語固有のベストプラクティスに従う"
+        },
+        {
+            "text": "セキュリティ脆弱性、パフォーマンス問題、保守性の観点でレビューする。SOLID原則の遵守を確認する"
+        }
+    ],
+
+    // テスト生成のための指示
+    "github.copilot.chat.testGeneration.instructions": [
+        {
+            "text": "AAAパターン（Arrange、Act、Assert）でテストを構成する。境界値テストとエラーケースを含める"
+        },
+        {
+            "text": "テスト名は「should_期待する動作_when_条件」の形式で記述する。外部依存はモックを使用する"
+        },
+    ],
+
+    // コードレビューのための指示
+    "github.copilot.chat.reviewSelection.instructions": [
+        {
+            "text": "セキュリティ脆弱性、パフォーマンス問題、保守性の観点でレビューする。SOLID原則の遵守を確認する"
+        }
+    ],
+
+    // コミットメッセージ生成のための指示
+    "github.copilot.chat.commitMessageGeneration.instructions": [
+        {
+            "text": "Conventional Commit形式を使用: type(scope): description"
+        },
+        {
+            "text": "タイプ: feat, fix, docs, style, refactor, test, chore"
+        },
+        {
+            "text": "要約は50文字以内"
+        },
+        {
+            "text": "命令形を使用"
+        },
+        {
+            "text": "可能な場合は#プレフィックスでissue番号を含める"
+        }
+    ],
+
+    // プルリクエスト説明生成のための指示
+    "github.copilot.chat.pullRequestDescriptionGeneration.instructions": [
+        {
+            "text": "PRタイトルは '[Type] スコープ: 説明' の形式で記述。Typeは英語（feat/fix/docs/style/refactor/perf/test/chore）、スコープと説明は日本語で記載してください。例：[feat] 認証機能: OAuth2.0サポートを追加"
+        },
+        {
+            "text": "PRの説明は以下の構造に従ってください：1) 概要（なぜこの変更が必要か）、2) 変更内容（何を変更したか）、3) 影響範囲（どこに影響するか）"
+        },
+        {
+            "text": "変更されたファイルへの具体的なリンクを含め、重要な変更点には行番号も記載してください"
+        },
+        {
+            "text": "Breaking Changesがある場合は必ず'BREAKING CHANGE'セクションを追加し、移行方法を説明してください"
+        },
+        {
+            "text": "関連するIssueがある場合は'Fixes #番号'または'Relates to #番号'形式で記載してください"
+        },
+        {
+            "text": "パフォーマンス、セキュリティ、アクセシビリティへの影響がある場合は、それぞれ明記してください"
+        },
+        {
+            "text": "レビュアーへの注意点やレビューして欲しいポイントがある場合は'レビューポイント'セクションに記載してください"
+        },
+        {
+            "text": "コードの品質向上のための変更（リファクタリング等）の場合は、変更前後の利点を明確に説明してください"
+        }
+    ],
+}
