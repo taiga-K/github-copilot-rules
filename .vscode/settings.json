@@ -1,6 +1,4 @@
 {
-    "github.copilot.chat.localeOverride": "ja",
-
     // Next Edit Suggestionsの有効化
     "github.copilot.nextEditSuggestions.enabled": true,
 
