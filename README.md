@@ -19,7 +19,7 @@
 - [refactoring.prompt.md](.github/prompts/refactoring.prompt.md): コードのリファクタリングに関する指示を提供します。
 
 ### カスタムチャットモード
-Github CopilotのデフォルトのチャットモードではAsk、Edit、Agentの3つのモードが用意されています。
+GitHub CopilotのデフォルトのチャットモードではAsk、Edit、Agentの3つのモードが用意されています。
 本リポジトリでは、以下のカスタムチャットモードを定義しています。
 - [taskmode.chatmode.md](.github/chatmodes/taskmode.chatmode.md): 開発前に技術的な調査と計画を行うためのタスクモードです。
   - ユーザの入力をもとに新しい機能や技術的な課題の概要を確認し、調査結果をもとにステップバイステップで実装計画を立てます。
@@ -29,7 +29,7 @@ Github CopilotのデフォルトのチャットモードではAsk、Edit、Agent
 
 一部のMCPは、npxを使用できない環境では動作しない場合があります。
 
-### Github Copilotの設定
+### GitHub Copilotの設定
 [settings.json](.github/settings.json)は、GitHub Copilotの設定を定義しています。
 この設定ファイルは、Copilotの動作をカスタマイズするために使用されます。
 
