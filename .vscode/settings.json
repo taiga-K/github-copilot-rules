@@ -56,7 +56,7 @@
             "text": "Conventional Commit形式を使用: type(scope): description"
         },
         {
-            "text": "タイプ: feat, fix, docs, style, refactor, test, chore"
+            "text": "タイプ: feat, fix, docs, style, refactor, perf, test, build, ci, chore"
         },
         {
             "text": "要約は50文字以内"
@@ -72,7 +72,7 @@
     // プルリクエスト説明生成のための指示
     "github.copilot.chat.pullRequestDescriptionGeneration.instructions": [
         {
-            "text": "PRタイトルは '[Type] スコープ: 説明' の形式で記述。Typeは英語（feat/fix/docs/style/refactor/perf/test/chore）、スコープと説明は日本語で記載してください。例：[feat] 認証機能: OAuth2.0サポートを追加"
+            "text": "PRタイトルは '[Type] スコープ: 説明' の形式で記述。Typeは英語（feat/fix/docs/style/refactor/perf/test/build/ci/chore）、スコープと説明は日本語で記載してください。例：[feat] 認証機能: OAuth2.0サポートを追加"
         },
         {
             "text": "PRの説明は以下の構造に従ってください：1) 概要（なぜこの変更が必要か）、2) 変更内容（何を変更したか）、3) 影響範囲（どこに影響するか）"
@@ -96,4 +96,7 @@
             "text": "コードの品質向上のための変更（リファクタリング等）の場合は、変更前後の利点を明確に説明してください"
         }
     ],
+    "accessibility.signals.chatResponseReceived": {
+        "sound": "on"
+    },
 }
